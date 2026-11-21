@@ -92,6 +92,11 @@ pnpm --filter create-ndigo-app test
 - `templates/{browser,node}/scripts/vite-plugin-lower-decorators.mjs` is a
   vendored copy of `scripts/vite-plugin-lower-decorators.mjs` from the Ndigo
   monorepo. Keep the two copies byte-identical.
+- `templates/{browser,node}/.oxlintrc.json.template` should be kept in sync with
+  the recommended preset exported by `@ndigo/oxlint-plugin` in the Ndigo
+  monorepo (`packages/ndigo-oxlint-plugin/src/recommended.ts`). This was
+  previously enforced by an automated parity test; after extraction it is a
+  manual sync step.
 
 ## Contributing
 
