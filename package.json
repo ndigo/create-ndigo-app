@@ -1,0 +1,44 @@
+{
+  "name": "create-ndigo-app",
+  "version": "0.0.1",
+  "description": "Scaffold a standalone Ndigo application (node or browser kind).",
+  "type": "module",
+  "bin": {
+    "create-ndigo-app": "./bin/create-ndigo-app.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "default": "./lib/index.js"
+    }
+  },
+  "files": [
+    "api",
+    "docs",
+    "bin",
+    "lib",
+    "templates"
+  ],
+  "scripts": {
+    "build:lib": "tsc -b tsconfig.build.json",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "ndigo",
+    "scaffold",
+    "create",
+    "create-ndigo-app"
+  ],
+  "author": "Jeff Rose <jeff_rose@outlook.com>",
+  "license": "ISC",
+  "engines": {
+    "node": ">=24"
+  },
+  "sideEffects": false,
+  "devDependencies": {
+    "@types/node": "~24.13.5",
+    "typescript": "~7.0.2",
+    "vitest": "~5.1.0"
+  }
+}
