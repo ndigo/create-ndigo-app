@@ -84,10 +84,19 @@ pnpm --filter create-ndigo-app build:lib
 pnpm --filter create-ndigo-app test
 ```
 
+## Maintaining
+
+- `templates/{browser,node}/AGENTS.md.template` is a vendored copy of
+  `tools/agent-content/instructions/bootstrap.md` from the Ndigo monorepo
+  (`github.com/ndigo/ndigo`). Refresh it manually when that file changes.
+- `templates/{browser,node}/scripts/vite-plugin-lower-decorators.mjs` is a
+  vendored copy of `scripts/vite-plugin-lower-decorators.mjs` from the Ndigo
+  monorepo. Keep the two copies byte-identical.
+
 ## Contributing
 
-See [CONTRIBUTING.md](../../CONTRIBUTING.md).
+See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
-[ISC](../../LICENSE)
+ISC
