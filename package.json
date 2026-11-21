@@ -22,7 +22,9 @@
   "scripts": {
     "build:lib": "tsc -b tsconfig.build.json",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "agents:sync": "node ../development-agents/gen.mjs .",
+    "agents:check": "node ../development-agents/gen.mjs . --check"
   },
   "keywords": [
     "ndigo",

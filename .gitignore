@@ -4,3 +4,10 @@ api/
 .tscache/
 *.tsbuildinfo
 coverage/
+
+# Generated agent trees (maintainer tooling; not shipped)
+.opencode/
+.omp/
+.agents/
+.agent-gen.json
+.agent-local.json
